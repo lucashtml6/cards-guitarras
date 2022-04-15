@@ -23,5 +23,85 @@ html {
 /* =========================== */
 
 /* SEÇÃO CARDS*/
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.container-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 960px;
+}
+
+.container-cards .card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 300px;
+  background-color: rgb(236, 235, 235);
+  height: 45rem;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform .2s ease-in-out;
+}
+
+.container-cards .card:hover {
+  transform: scale(1.02);
+}
+
+.container-cards .card .link-saiba-mais {
+  align-self: flex-start;
+  margin: auto 20px 20px 20px;
+  padding: 10px;
+  border-radius: 2px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  background-color: rgb(8, 0, 12);
+  transition: transform .4s ease-in-out;
+}
+
+.container-cards .card .link-saiba-mais:hover {
+  transform: translateY(-5px);
+}
+
+.container-cards .card .box-imagem-card {
+  height: 40%;
+}
+
+.container-cards .card .box-imagem-card img {
+  object-fit: cover;
+  height: 100%;
+  filter: grayscale(100%);
+  transition: .7s ease-out;
+}
+
+.container-cards .card .box-imagem-card img:hover {
+  filter: grayscale(0);
+}
+
+.container-cards .card .info-card {
+  padding: 20px;
+}
+
+.container-cards .card .info-card h2 {
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+}
+
+.container-cards .card .info-card h2::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: black;
+}
+
+.container-cards .card .info-card p {
+  text-align: justify;
+  font-size: 1.2rem;
+}
 /* =========================== */
 
