@@ -146,3 +146,37 @@ section {
     flex: 0 1 240px;
   }
 }
+
+/* RODAPEÉ */
+.rodape {
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  align-items: center;
+  padding: 40px 0;
+  margin-top: 90px;
+}
+
+.rodape span {
+  font-weight: 600;
+  font-size: 2rem 
+}
+
+.rodape .icones-redes-sociais {
+  margin-top: 20px;
+}
+
+.rodape .icones-redes-sociais .icone-rede-social {
+  margin: 0 5px;
+  display: inline-block;
+  transition: transform .3s ease-in-out;
+}
+
+.rodape .icones-redes-sociais .icone-rede-social:hover {
+  transform: scale(1.2);
+}
+
+.rodape .icones-redes-sociais .icone-rede-social img {
+  width: 40px;
+}
+
