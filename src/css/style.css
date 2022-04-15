@@ -12,7 +12,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 60px 10px 60px 10px;
+  padding: 60px 10px;
 }
 
 .cabecalho h1 {
@@ -26,7 +26,7 @@ html {
 /* SEÇÃO CARDS*/
 section {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* alinha o container no centro */
 }
 
 .container-cards {
@@ -35,7 +35,7 @@ section {
   flex-wrap: wrap;
   gap: 30px;
   max-width: 960px;
-  margin: 30px;
+  margin: 0 30px;
 }
 
 .container-cards .card {
@@ -76,7 +76,7 @@ section {
   object-fit: cover;
   height: 100%;
   filter: grayscale(100%);
-  transition: .7s ease-out;
+  transition: .3s ease-out;
 }
 
 .container-cards .card .box-imagem-card img:hover {
@@ -118,7 +118,7 @@ section {
 
 .rodape span {
   font-weight: 600;
-  font-size: 2rem ;
+  font-size: 1.5rem ;
   text-align: center;
 }
 
