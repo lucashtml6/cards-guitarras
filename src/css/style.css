@@ -12,12 +12,13 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 60px 10px 60px 10px;
 }
 
 .cabecalho h1 {
   color: white;
   font-size: 4rem;
+  text-align: center;
 }
 
 /* =========================== */
@@ -34,6 +35,7 @@ section {
   flex-wrap: wrap;
   gap: 30px;
   max-width: 960px;
+  margin: 30px;
 }
 
 .container-cards .card {
@@ -41,7 +43,6 @@ section {
   flex-direction: column;
   flex: 0 1 300px;
   background-color: rgb(236, 235, 235);
-  height: 45rem;
   overflow: hidden;
   border-radius: 8px;
   transition: transform .2s ease-in-out;
@@ -68,7 +69,7 @@ section {
 }
 
 .container-cards .card .box-imagem-card {
-  height: 40%;
+  height: 150px;
 }
 
 .container-cards .card .box-imagem-card img {
@@ -105,3 +106,43 @@ section {
 }
 /* =========================== */
 
+/* MEDIA QUERIES */
+
+@media (max-width: 1024px) { 
+  .container-cards {
+    margin: 0 60px;
+  }
+}
+
+@media (max-width: 768px) { 
+  html {
+    font-size: 60%;
+  }
+}
+
+
+@media (max-width: 425px) { 
+  html {
+    font-size: 56%;
+  }
+
+  .container-cards {
+    margin: 0 10px;
+  }
+
+}
+
+@media (max-width: 375px) { 
+  html {
+    font-size: 48%;
+  }
+}
+@media (max-width: 320px) { 
+  html {
+    font-size: 45%;
+  }
+
+  .container-cards .card {
+    flex: 0 1 240px;
+  }
+}
